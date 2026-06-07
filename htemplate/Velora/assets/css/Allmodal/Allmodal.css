@@ -1,0 +1,50 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+/* --- Modal base --- */
+.h-modal {
+  z-index: 100;
+}
+
+/* --- Search box animation --- */
+.search-box {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-280%);
+  transition: all 0.5s ease;
+}
+
+.search-box.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+  .menu-list {
+    transform: translateX(100%); 
+    max-width: 20rem;
+    width: 100%;
+    transition: transform 0.5s ease ,opacity 0.5s ease ;
+  }
+  .menu-list.show {
+    transform: translateX(0);
+  }
+  .dialog{
+    visibility: hidden;
+    transform: translateY(-280%);
+    transition: all 0.5s ease;
+  }
+  .dialog.show{
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: all 0.5s ease;
+  
+  }
+  .textBox {
+    transition: height 0.8s ease;
+  }
